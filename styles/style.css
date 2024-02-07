@@ -16,10 +16,8 @@
     --light-theme-background: rgb(214, 214, 214);
     --text-color-light: rgb(10, 10, 10);
     --dark-theme-background: rgb(20, 20, 20);
-
-
     --x-Pawn-color-dark: rgb(0, 251, 115);
-    --o-Pawn-color-dark: #da02ab;
+    --o-Pawn-color-dark: rgb(218, 2, 171);
     --x-Pawn-color: rgb(185, 0, 0);
     --o-Pawn-color: rgb(0, 111, 185);
 }
@@ -50,15 +48,15 @@ html {
 }
 
 .container {
-    height: 300px;
-    width: 300px;
+    height: 30rem;
+    width: 30rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .tile {
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
     border: 2px solid var(--text-color-light);
     cursor: pointer;
     display: flex;
@@ -81,11 +79,11 @@ html {
     color: var(--text-color-light);
 }
 
-.player_x_config_span{
+.player_x_config_span {
     color: var(--x-Pawn-color);
 }
 
-.player_o_config_span{
+.player_o_config_span {
     color: var(--o-Pawn-color);
 }
 
@@ -110,15 +108,15 @@ html {
     color: var(--text-color-light);
 }
 
-.player_x{
+.player_x {
     color: var(--x-Pawn-color);
 }
 
-.player_o{
+.player_o {
     color: var(--o-Pawn-color);
 }
 
-.reset{
+.reset {
     position: absolute;
     display: none;
     height: 3.8rem;
@@ -152,15 +150,57 @@ html {
         --text-color-light: rgb(243, 243, 243);
     }
 
-    .viewport{
+    .viewport {
         background-color: var(--dark-theme-background);
     }
 
-    .player_x{
+    .player_x {
         color: var(--x-Pawn-color-dark);
     }
 
-    .player_o{
+    .player_o {
         color: var(--o-Pawn-color-dark);
     }
-  }
+}
+
+@media (max-width: 1080px){
+    .gameMainBanner {
+        margin-top: 12rem;
+        font-size: 12rem;
+    }
+
+    .container {
+        height: 70rem;
+        width: 70rem;
+    }
+
+    .tile {
+        height: 23.3rem;
+        width: 23.3rem;
+        font-size: 15rem;
+    }
+
+    .game-config-tllr {
+        height: 15rem;
+        width: 45rem;
+        transform: translateY(-55rem);
+    }
+
+    .gm-cn-tllr-p {
+        font-size: 5rem;
+    }
+
+    .wintllr {
+        height: 15rem;
+        width: 55rem;
+        transform: translateY(55rem);
+        font-size: 8rem;
+    }
+
+    .reset {
+        height: 8.8rem;
+        width: 25.8rem;
+        font-size: 4.5rem;
+        transform: translateY(75rem);
+    }
+}
