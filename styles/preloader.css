@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+:root{
+    --bar-color-light: rgb(110, 110, 110);
+    --progress-bar: rgb(0, 0, 0);
+    --back-color: rgb(214, 214, 214);
+    --logo-url: url(../components/loading-logo-light.png);
+    --text-url: url(../components/text-light.png);
+    --load-logo-filter: drop-shadow(0px 0px 7px rgba(59, 59, 59, 0.8));
+}
+
+.preloader{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--back-color);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 0.4s;
+}
+
+.logo{
+    display: block;
+    height: 120px;
+    width: 120px;
+    background-image: var(--logo-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: var(--load-logo-filter);
+}
+
+.lding-txt{
+    width: 200px;
+    height: 35px;
+    background-image: var(--text-url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loadbar{
+    position: relative;
+    height: 5px;
+    width: 400px;
+    background-color: var(--bar-color-light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 2px;
+}
+
+.progress{
+    position: absolute;
+    background-color: var(--progress-bar);
+    height: 3px;
+    width: 0%;
+    border-radius: 20px;
+    transition: 0.7s ease-out;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --logo-url: url(../components/loading-logo-dark.png);
+        --text-url: url(../components/text-dark.png);
+        --back-color: rgb(20, 20, 20);
+        --bar-color-light: rgb(83, 83, 83);
+        --progress-bar: rgb(255, 255, 255);
+        ----load-logo-filter: drop-shadow(0px 0px 7px rgba(238, 238, 238, 1));
+    }
+}
