@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-Welcome to the classic Tic Tac Toe game! This simple yet addictive game allows you to challenge your friends or play against an AI opponent. Whether you're a beginner or a Tic Tac Toe pro, this game is perfect for passing the time and honing your strategic skills.
+Welcome to the classic Tic Tac Toe game! This simple yet addictive game allows you to challenge your friends. Whether you're a beginner or a Tic Tac Toe pro, this game is perfect for passing the time and honing your strategic skills.
 
 ![Tic Tac Toe Gameplay](components/idark.png)
 
