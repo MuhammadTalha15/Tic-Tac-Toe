@@ -9,6 +9,7 @@ Welcome to the classic Tic Tac Toe game! This simple yet addictive game allows y
 - **Play against a friend:** Challenge your friend to a classic Tic Tac Toe match and see who emerges victorious.
 - **Responsive design:** Enjoy seamless gameplay experience across all devices, from desktops to mobile phones.
 - **Beautiful interface:** Stunning visuals and intuitive user interface enhance the gaming experience.
+- **Theme Friendly:** Exprerience in Dark and Light Modes according to your Device's preferences.
 
 ## Demo
 
